@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="PicoPlaca.DistributedServices.Services" elementFormDefault="qualified" targetNamespace="PicoPlaca.DistributedServices.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PicoPlacaDatos">
+    <xs:sequence>
+      <xs:element name="Codigo" nillable="true" type="xs:string" />
+      <xs:element name="Dia" nillable="true" type="xs:string" />
+      <xs:element name="Digito" nillable="true" type="xs:string" />
+      <xs:element name="Fecha" nillable="true" type="xs:string" />
+      <xs:element name="Placa" nillable="true" type="xs:string" />
+      <xs:element name="Tiempo" type="ser:duration" />
+      <xs:element name="TipoHora" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PicoPlacaDatos" nillable="true" type="tns:PicoPlacaDatos" />
+</xs:schema>

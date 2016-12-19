@@ -1,0 +1,9 @@
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\PicoPlaca.Data.EF.dll.config
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\PicoPlaca.Data.EF.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\PicoPlaca.Data.EF.pdb
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\EntityFramework.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\EntityFramework.xml
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\obj\Debug\PicoPlaca.Data.EF.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.Data.EF\obj\Debug\PicoPlaca.Data.EF.pdb

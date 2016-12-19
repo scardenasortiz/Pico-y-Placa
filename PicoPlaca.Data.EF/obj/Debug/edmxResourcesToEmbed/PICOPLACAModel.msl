@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="picoplacaModelStoreContainer" CdmEntityContainer="picoplacaEntities">
+    <EntitySetMapping Name="Dias">
+      <EntityTypeMapping TypeName="picoplacaModel.Dias">
+        <MappingFragment StoreEntitySet="Dias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Digito">
+      <EntityTypeMapping TypeName="picoplacaModel.Digito">
+        <MappingFragment StoreEntitySet="Digito">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Digito1" ColumnName="Digito" />
+          <ScalarProperty Name="CodigoDias" ColumnName="CodigoDias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Horarios">
+      <EntityTypeMapping TypeName="picoplacaModel.Horarios">
+        <MappingFragment StoreEntitySet="Horarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HoraInicio" ColumnName="HoraInicio" />
+          <ScalarProperty Name="HoraFin" ColumnName="HoraFin" />
+          <ScalarProperty Name="TipoHora" ColumnName="TipoHora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

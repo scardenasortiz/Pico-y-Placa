@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="picoplacaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Dias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dia" Type="varchar" MaxLength="50" />
+          <Property Name="Codigo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Digito">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Digito" Type="varchar" MaxLength="1" />
+          <Property Name="CodigoDias" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Horarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HoraInicio" Type="time" Precision="7" />
+          <Property Name="HoraFin" Type="time" Precision="7" />
+          <Property Name="TipoHora" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="picoplacaModelStoreContainer">
+          <EntitySet Name="Dias" EntityType="Self.Dias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Digito" EntityType="Self.Digito" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Horarios" EntityType="Self.Horarios" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="picoplacaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Dias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Digito">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Digito1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CodigoDias" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Horarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HoraInicio" Type="Time" Precision="7" />
+          <Property Name="HoraFin" Type="Time" Precision="7" />
+          <Property Name="TipoHora" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="picoplacaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Dias" EntityType="Self.Dias" />
+          <EntitySet Name="Digito" EntityType="Self.Digito" />
+          <EntitySet Name="Horarios" EntityType="Self.Horarios" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="picoplacaModelStoreContainer" CdmEntityContainer="picoplacaEntities">
+          <EntitySetMapping Name="Dias">
+            <EntityTypeMapping TypeName="picoplacaModel.Dias">
+              <MappingFragment StoreEntitySet="Dias">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Dia" ColumnName="Dia" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Digito">
+            <EntityTypeMapping TypeName="picoplacaModel.Digito">
+              <MappingFragment StoreEntitySet="Digito">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Digito1" ColumnName="Digito" />
+                <ScalarProperty Name="CodigoDias" ColumnName="CodigoDias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Horarios">
+            <EntityTypeMapping TypeName="picoplacaModel.Horarios">
+              <MappingFragment StoreEntitySet="Horarios">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="HoraInicio" ColumnName="HoraInicio" />
+                <ScalarProperty Name="HoraFin" ColumnName="HoraFin" />
+                <ScalarProperty Name="TipoHora" ColumnName="TipoHora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="picoplacaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dia" Type="varchar" MaxLength="50" />
+    <Property Name="Codigo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Digito">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Digito" Type="varchar" MaxLength="1" />
+    <Property Name="CodigoDias" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Horarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoraInicio" Type="time" Precision="7" />
+    <Property Name="HoraFin" Type="time" Precision="7" />
+    <Property Name="TipoHora" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityContainer Name="picoplacaModelStoreContainer">
+    <EntitySet Name="Dias" EntityType="Self.Dias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Digito" EntityType="Self.Digito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Horarios" EntityType="Self.Horarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

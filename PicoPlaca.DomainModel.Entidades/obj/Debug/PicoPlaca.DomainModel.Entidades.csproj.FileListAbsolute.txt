@@ -1,0 +1,10 @@
+C:\Users\Jhovanna\PicoPlaca\Proyecto.ANAI.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.dll.config
+C:\Users\Jhovanna\PicoPlaca\Proyecto.ANAI.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.dll
+C:\Users\Jhovanna\PicoPlaca\Proyecto.ANAI.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.pdb
+C:\Users\Jhovanna\PicoPlaca\Proyecto.ANAI.DomainModel.Entidades\obj\Debug\PicoPlaca.DomainModel.Entidades.dll
+C:\Users\Jhovanna\PicoPlaca\Proyecto.ANAI.DomainModel.Entidades\obj\Debug\PicoPlaca.DomainModel.Entidades.pdb
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.dll.config
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DomainModel.Entidades\bin\Debug\PicoPlaca.DomainModel.Entidades.pdb
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DomainModel.Entidades\obj\Debug\PicoPlaca.DomainModel.Entidades.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DomainModel.Entidades\obj\Debug\PicoPlaca.DomainModel.Entidades.pdb

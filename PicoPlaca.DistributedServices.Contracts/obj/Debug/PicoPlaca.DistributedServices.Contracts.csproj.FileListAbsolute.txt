@@ -1,0 +1,5 @@
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DistributedServices.Contracts\bin\Debug\PicoPlaca.DistributedServices.Contracts.dll.config
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DistributedServices.Contracts\bin\Debug\PicoPlaca.DistributedServices.Contracts.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DistributedServices.Contracts\bin\Debug\PicoPlaca.DistributedServices.Contracts.pdb
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DistributedServices.Contracts\obj\Debug\PicoPlaca.DistributedServices.Contracts.dll
+C:\Users\Jhovanna\PicoPlaca\PicoPlaca.DistributedServices.Contracts\obj\Debug\PicoPlaca.DistributedServices.Contracts.pdb
